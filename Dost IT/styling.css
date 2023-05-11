@@ -1,0 +1,22 @@
+aside { 
+    background: aqua;
+    padding: 5px;
+    width: 15%;
+    float: right;
+}
+article{
+    margin: 50px;
+    padding: 5px;
+    width: 15%;
+    float: right;
+}
+
+p{
+
+
+    font-size: 33px;
+}
+
+.date{font-size: 4em;}
+.date ruby { background: rgb(70, 70, 253); color: antiquewhite;}
+.date rt { background: aqua; color: black; padding: 2px;}

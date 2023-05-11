@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    aside {
+     background: #f0f0f0;
+     padding: 10px;
+     width: 30%;
+     float: right;
+    }
+    article {
+     margin-right: 240px;
+     display: block;
+    }
+
+    .date { font-size: 1.5em; }
+   .date ruby { background: #0078c9; color: #fff; }
+   .date rt { background: #a0dae8; color: #000; padding: 2px; }
+
+   
+   </style>
+
+<script> 
+  window.onload = function() {
+   var drawingCanvas = document.getElementById('smile');
+   if(drawingCanvas && drawingCanvas.getContext) {
+    var context = drawingCanvas.getContext('2d');
+    // Рисуем окружность 
+    context.strokeStyle = "#000";
+    context.fillStyle = "#fc0";
+    context.beginPath();
+    context.arc(100,100,50,0,Math.PI*2,true);
+    context.closePath();
+    context.stroke();
+    context.fill();
+    // Рисуем левый глаз 
+    context.fillStyle = "#fff";
+    context.beginPath();
+    context.arc(84,90,8,0,Math.PI*2,true);
+    context.closePath();
+    context.stroke();
+    context.fill();
+    // Рисуем правый глаз 
+    context.beginPath();
+    context.arc(116,90,8,0,Math.PI*2,true);
+    context.closePath();
+    context.stroke();
+    context.fill();
+    // Рисуем рот
+    context.beginPath();
+    context.moveTo(70,115);
+    context.quadraticCurveTo(100,130,130,115);
+    context.quadraticCurveTo(100,150,70,115); 
+    context.closePath();
+    context.stroke();
+    context.fill();
+   }
+  }
+ </script>
+</head>
+<body>
+  <header><h1>Текст</h1></header>
+  <!-- <details>
+    <summary>ИASASASASA </summary>
+    <p>Автор:saSASASAS</p>
+   </details>
+<p>
+  Текст Текст Текст Текст
+  <mark> Текст</mark>
+  Текст Текст Текст Текст
+</p> -->
+   
+
+
+
+ <!--
+   <progress max="100" value="25">
+    Загружено на <span id="value">25</span>%
+  </progress>
+-->
+  <!-- <menu>
+    <li>Русская кухня. Уха бурлацкая</li>
+    <li>Украинская кухня. Вареники</li>
+    <li>Молдавская кухня. Паприкаш</li>
+    <li>Кавказская кухня. Суп-харчо</li>
+    <li>Прибалтийская кухня. Вертиняй</li>
+   </menu> 
+
+   <p>Температура воды</p>
+   <meter value="60" max="50" low="10" high="100">Низкая</meter>
+   <meter value="30" max="100" low="10" high="60">Нормальная</meter>
+   <meter value="80" max="100" low="10" high="60">Горячая</meter>
+   <meter value="100" max="100">Кипяток</meter>  -->
+  <!-- <aside>
+   <p>Экономьте электричество</p>
+   <p>Хороший язык</p>
+   <p>Чья палка больше</p>
+  </aside>
+  <article>
+   История о том, как приходилось экономить электричество, 
+   какие меры для этого принимались, и куда оно на самом деле уходило.
+  </article> -->
+ <!-- <hgroup>
+    <h1>Пример</h1>
+    <h2>Персональный сайт</h2>
+  </hgroup>
+
+  <ruby>
+    тест<rt>2121</rt>
+   тест<rt>212</rt>
+   </ruby>
+
+   <p class="date">
+    <ruby>
+     23  <rt>ноябрь</rt>
+    
+    </ruby>
+   </p> -->
+
+   <ruby>
+    字 <rp>(</rp><rt>zì</rt><rp>)</rp>
+   </ruby>
+
+    
+   <!-- <p >метоксихлор диэтиламинометил бутил амино акридин</p> -->
+
+
+   <audio controls >
+
+    <source src="shoxrux.mp3" type="audio/mpeg">
+    Тег audio не поддерживается вашим браузером. 
+    <a href="shoxrux.mp3">Скачайте музыку</a>.
+  </audio> <br>
+  <a href="shoxrux.mp3">Скачайте музыку</a>.
+ <!--
+  <audio autoplay="autoplay">
+  </audio>
+
+  <audio controls="controls">
+  </audio>
+
+  <audio muted="muted">
+  </audio>
+
+  <audio src="shoxrux.mp3" controls="controls">
+    Ваш браузер
+   </audio>
+
+   <video>
+    <source src="URL">
+   </video>
+-->
+
+
+  <video width="400" height="320" controls="controls" autoplay>
+ 
+    <source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+
+    Тег video не поддерживается вашим браузером.
+   </video>
+
+   <video loop="loop">
+  </video>
+
+  <video width="400" height="300" controls poster="1.png">
+
+    <source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+
+    Тег video не поддерживается вашим браузером. <a href="video.mp4">Скачайте видео</a>.
+  </video>
+
+  <video width="500" height="400" controls>
+
+    <source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+
+    Тег video не поддерживается вашим браузером.
+   </video>
+<br>
+   <canvas id="smile" width="200" height="200">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas> 
+
+</body>
+</html>
